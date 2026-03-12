@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera - Productos Capilares</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            padding-top: 80px;
+        }
+
+
+        /* Menú de navegación fijo */
+        .menu-secciones {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+        }
+
+
+        .menu-secciones h3 {
+            color: white;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+
+        .menu-secciones a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+
+        .menu-secciones a:hover {
+            background: rgba(255,255,255,0.4);
+            transform: translateY(-2px);
+        }
+
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #667eea;
+            font-size: 3em;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+
+        /* Secciones de marcas */
+        h2 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            margin: 40px 0 30px 0;
+            border-radius: 10px;
+            font-size: 2em;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+
+        /* Contenedor para cada producto */
+        .producto {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+
+        /* Logos de marcas */
+        .logo-marca {
+            display: block;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+
+        /* Nombres de productos */
+        h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 15px 0 10px 0;
+        }
+
+
+        /* Precios */
+        .precio {
+            color: #27ae60;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+
+        /* Imágenes de productos */
+              .producto img {
+    display: block;
+    width: 350px;      /* mismo ancho */
+    height: 350px;     /* misma altura */
+    object-fit: cover; /* recorta sin deformar */
+    margin: 28px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.img-linea {
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+      
+
+
+        /* Descripciones */
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 15px 0;
+            text-align: justify;
+            font-weight: normal;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+
+            .menu-secciones {
+                justify-content: center;
+            }
+
+
+            .menu-secciones a {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+
+            .producto {
+                padding: 15px;
+                margin: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- MENÚ DE SECCIONES FIJO -->
+<div class="menu-secciones">
+    <h3>Ir a:</h3>
+    <a href="#vivebeauty">Vive beauty</a>
+    <a href="#click-hair">Click Hair</a>
+</div>
+
+
+<h1>Productos Corporales</h1>
+
+<h2 id="vivebeauty">🏷️ MARCA VIVE BEAUTY</h2>
+    
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo2wnPWSJtPZxdV66oKLZ9WAt8yl-bCX4Jfw&s">
+
+<div class="producto">
+    <h3>MANTEQUILLAS CORPORALES 200ML</h3>
+    <p class="precio">$26.000</p>
+    <img src="https://julietamakeup.com.co/wp-content/uploads/2023/07/COLECCION-AGOSTO-andrea-44.png">
+    <li>BOMBOMBUN</li> 
+    <li>BOMBSHELL</li> 
+    <li>CHIFFON</li> 
+    <li>COCONUT</li>
+    <li>EXPLOSION FRUTAL</li>
+    <li>MANGO</li>
+    <li>PERA</li> 
+    <li>PURE SEDUCTION</li> 
+    <li>VAINILLA</li>
+</div>
+
+<div class="producto">
+    <h3>EXFOLIANTES CORPORALES 350ML</h3>
+    <p class="precio">$26.000</p>
+    <img src="https://vivebeauty.com.co/cdn/shop/collections/vivebeauty_n.jpg?v=1750303802">
+    <li>BOOMBERRY</li> 
+    <li>EUPHORIA</li> 
+    <li>GREEN GLOW</li> 
+    <li>MANGO</li>
+    <li>TROPICAL DREAM</li>
+    <li>CAFE</li>
+    <li>CHOCOLATE</li> 
+    <li>FRESA</li> 
+    <li>KIWI</li>
+    <li>MARACUYA</li>
+    <li>SANDIA</li>
+</div>
+
+<div class="producto">
+    <h3>CHISPITAS DE LUNA 200ML</h3>
+    <p class="precio">$26.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqK-l8yH867bIZHEITzDpZI3dzQbNffW8tw&s">
+    <li>BOOMBERRY</li> 
+    <li>EUPHORIA</li> 
+    <li>GREEN GLOW</li> 
+    <li>MANGO</li>
+    <li>TROPICAL DREAM</li>
+</div>
+
+    <div class="producto">
+    <h3>SPLASH 225ML</h3>
+    <p class="precio">$26.000</p>
+    <img src="https://mysticstore.com.co/wp-content/uploads/2025/07/Body-Splash-Vive-Beauty-Principal-300x300.jpg">
+    <li>BOOMBERRY</li> 
+    <li>EUPHORIA</li> 
+    <li>GREEN GLOW</li> 
+    <li>MANGO POP</li>
+    <li>TROPICAL DREAM</li>
+</div>
+
+<h2 id="click-hair">🏷️ MARCA CLICK HAIR</h2>
+    
+<img class="logo-marca" src="https://clickcosmetics.us/cdn/shop/files/Diseno_sin_titulo_3.png?v=1710955758">
+
+<div class="producto">
+    <h3>MANTEQUILLA CON GLITTER</h3>
+    <p class="precio">$44.000</p>
+    <img src="https://luegopagocdn.azureedge.net/content-process/products-images/prod/28431/ed239f8d-0169-4a40-bf6a-8ab0119f64df.webp">
+</div>
+
+<div class="producto">
+    <h3>JABON CORPORAL</h3>
+    <p class="precio">$43.000</p>
+    <img src="https://www.pigmentta.com/wp-content/uploads/2025/01/Jabon-Cremoso-Click-Hair-3.jpg">
+</div>
+
+<div class="producto">
+    <h3>EXFOLIANTE CORPORAL DE ROSAS</h3>
+    <p class="precio">51.000</p>
+    <img src="https://product-images.farmatodo.com/TZ-vy9CNlufkKL3HwI8qPfCu2wCC0cQUhWcXQjOoAB0n6OxgrRChWjhwadZaZ8-ue2ZW-fucj2o2m8UGFKBttEkC_PU6GYWvQHeHf-4lhY3Lhy2i9w">
+</div>
+
+</body>
+</html>
