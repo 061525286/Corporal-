@@ -1,208 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera - Productos Capilares</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos Corporales</title>
 
+<style>
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
-            padding-top: 80px;
-        }
-
-
-        /* Menú de navegación fijo */
-        .menu-secciones {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 15px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 15px;
-        }
-
-
-        .menu-secciones h3 {
-            color: white;
-            font-size: 18px;
-            margin-right: 10px;
-        }
-
-
-        .menu-secciones a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            font-size: 14px;
-        }
-
-
-        .menu-secciones a:hover {
-            background: rgba(255,255,255,0.4);
-            transform: translateY(-2px);
-        }
-
-
-        /* Título principal */
-        h1 {
-            text-align: center;
-            color: #667eea;
-            font-size: 3em;
-            margin: 30px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-
-
-        /* Secciones de marcas */
-        h2 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            margin: 40px 0 30px 0;
-            border-radius: 10px;
-            font-size: 2em;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-
-        /* Contenedor para cada producto */
-        .producto {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px auto;
-            max-width: 800px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .producto:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-        }
-
-
-        /* Logos de marcas */
-        .logo-marca {
-            display: block;
-            max-width: 300px;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-
-
-        /* Nombres de productos */
-        h3 {
-            color: #667eea;
-            font-size: 1.5em;
-            margin: 15px 0 10px 0;
-        }
-
-
-        /* Precios */
-        .precio {
-            color: #27ae60;
-            font-size: 1.8em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-
-        /* Imágenes de productos */
-              .producto img {
-    display: block;
-    width: 350px;      /* mismo ancho */
-    height: 350px;     /* misma altura */
-    object-fit: cover; /* recorta sin deformar */
-    margin: 28px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.img-linea {
-  width: 200px;
-  display: inline-block;
-  margin-right: 10px;
+body{
+font-family:'Playfair Display', serif;
+background:#FFF7F2;
+padding-top:80px;
+color:#5F5F5F;
 }
-      
 
+/* BARRA SUPERIOR */
+.barra-titulo{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#F6C8A8;
+padding:18px;
+display:flex;
+justify-content:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
 
-        /* Descripciones */
-        h4 {
-            color: #555;
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin: 15px 0;
-            text-align: justify;
-            font-weight: normal;
-        }
+.barra-titulo h1{
+color:#FFFFFF;
+font-size:28px;
+letter-spacing:3px;
+font-weight:bold;
+}
 
+/* PRODUCTO */
+.producto{
+background:#FFFFFF;
+border-radius:15px;
+padding:25px;
+margin:30px auto;
+max-width:800px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:transform 0.3s ease;
+}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
+.producto:hover{
+transform:translateY(-4px);
+}
 
+/* IMAGEN PRODUCTO */
+.producto img{
+display:block;
+width:350px;
+height:350px;
+object-fit:cover;
+margin:20px auto;
+border-radius:12px;
+}
 
-            h2 {
-                font-size: 1.5em;
-            }
+/* NOMBRE PRODUCTO */
+.producto h3{
+color:#F6C8A8;
+font-size:1.6em;
+margin:15px 0;
+text-align:center;
+}
 
+/* PRECIO */
+.precio{
+color:#7FAF9A;
+font-size:1.8em;
+font-weight:bold;
+margin:10px 0;
+text-align:center;
+}
 
-            .menu-secciones {
-                justify-content: center;
-            }
-
-
-            .menu-secciones a {
-                font-size: 12px;
-                padding: 6px 12px;
-            }
-
-
-            .producto {
-                padding: 15px;
-                margin: 15px 10px;
-            }
-        }
-    </style>
+</style>
 </head>
+
 <body>
-<!-- MENÚ DE SECCIONES FIJO -->
-<div class="menu-secciones">
-    <h3>Ir a:</h3>
-    <a href="#vivebeauty">Vive beauty</a>
-    <a href="#click-hair">Click Hair</a>
-    <a href="#ritual-botanico">Ritual Botanico</a>
+
+<div class="barra-titulo">
+<h1>PRODUCTOS CORPORALES</h1>
 </div>
-
-
-<h1>Productos Corporales</h1>
-
-<h2 id="vivebeauty">🏷️ MARCA VIVE BEAUTY</h2>
-    
-<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo2wnPWSJtPZxdV66oKLZ9WAt8yl-bCX4Jfw&s">
 
 <div class="producto">
     <h3>MANTEQUILLAS CORPORALES 200ML</h3>
@@ -258,9 +145,6 @@
     <li>TROPICAL DREAM</li>
 </div>
 
-<h2 id="click-hair">🏷️ MARCA CLICK HAIR</h2>
-    
-<img class="logo-marca" src="https://clickcosmetics.us/cdn/shop/files/Diseno_sin_titulo_3.png?v=1710955758">
 
 <div class="producto">
     <h3>MANTEQUILLA CON GLITTER</h3>
@@ -280,11 +164,6 @@
     <img src="https://product-images.farmatodo.com/TZ-vy9CNlufkKL3HwI8qPfCu2wCC0cQUhWcXQjOoAB0n6OxgrRChWjhwadZaZ8-ue2ZW-fucj2o2m8UGFKBttEkC_PU6GYWvQHeHf-4lhY3Lhy2i9w">
 </div>
 
-<h2 id="ritual-botanico">🏷️ MARCA RITUAL BOTANICO</h2>
-    
-<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo2wnPWSJtPZxdV66oKLZ9WAt8yl-bCX4Jfw&s">
-
-    
     
 </body>
 </html>
